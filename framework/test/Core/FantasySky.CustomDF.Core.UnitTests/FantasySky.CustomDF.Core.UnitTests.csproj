@@ -1,7 +1,0 @@
-<Project Sdk="Microsoft.NET.Sdk">
-	
-	<ItemGroup>
-		<ProjectReference Include="..\..\..\src\Core\FantasySky.CustomDF.Core\FantasySky.CustomDF.Core.csproj" />
-	</ItemGroup>
-	
-</Project>

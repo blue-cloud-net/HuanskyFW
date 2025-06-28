@@ -1,0 +1,7 @@
+<Project Sdk="Microsoft.NET.Sdk">
+	
+	<ItemGroup>
+		<ProjectReference Include="..\..\..\src\Core\HuanskyFW.Core\HuanskyFW.Core.csproj" />
+	</ItemGroup>
+	
+</Project>

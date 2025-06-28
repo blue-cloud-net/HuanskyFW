@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<Import Project="..\..\..\common.props" />
+
+	<PropertyGroup>
+		<PackageId>HuanskyFW.Caching</PackageId>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.Extensions.Caching.Memory" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\..\Core\HuanskyFW.Core\HuanskyFW.Core.csproj" />
+		<ProjectReference Include="..\..\Core\HuanskyFW.Ddd.Domain\HuanskyFW.Ddd.Domain.csproj" />
+		<ProjectReference Include="..\..\Serialize\Json\HuanskyFW.Serialize.Json.SystemTextJson\HuanskyFW.Serialize.Json.SystemTextJson.csproj" />
+	</ItemGroup>
+
+</Project>

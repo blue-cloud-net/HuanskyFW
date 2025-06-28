@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<Import Project="..\..\..\common.props" />
+
+	<PropertyGroup>
+		<PackageId>HuanskyFW.AspNetCore</PackageId>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<FrameworkReference Include="Microsoft.AspNetCore.App" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.AspNetCore.OpenApi" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\..\BackgroundJobs\HuanskyFW.BackgroundJobs\HuanskyFW.BackgroundJobs.csproj" />
+		<ProjectReference Include="..\HuanskyFW.Core\HuanskyFW.Core.csproj" />
+	</ItemGroup>
+
+</Project>

@@ -1,0 +1,7 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<ItemGroup>
+		<ProjectReference Include="..\HuanskyFW.Storage.Abstractions\HuanskyFW.Storage.Abstractions.csproj" />
+	</ItemGroup>
+
+</Project>

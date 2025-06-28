@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<Import Project="..\..\..\common.props" />
+
+	<PropertyGroup>
+		<PackageId>HuanskyFW.DistributedLocking.Medallion</PackageId>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="DistributedLock.Core" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\HuanskyFW.DistributedLocking\HuanskyFW.DistributedLocking.csproj" />
+	</ItemGroup>
+
+</Project>

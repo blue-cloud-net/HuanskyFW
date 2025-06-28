@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<Import Project="..\..\..\common.props" />
+
+	<PropertyGroup>
+		<PackageId>HuanskyFW.EntityFrameworkCore.Mysql</PackageId>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Pomelo.EntityFrameworkCore.MySql" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\HuanskyFW.EntityFrameworkCore\HuanskyFW.EntityFrameworkCore.csproj" />
+	</ItemGroup>
+
+</Project>

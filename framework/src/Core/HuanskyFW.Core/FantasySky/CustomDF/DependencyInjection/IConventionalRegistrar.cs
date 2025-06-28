@@ -1,0 +1,14 @@
+using System.Reflection;
+
+using Microsoft.Extensions.DependencyInjection;
+
+namespace HuanskyFW.DependencyInjection;
+
+public interface IConventionalRegistrar
+{
+    void AddAssembly(IServiceCollection services, Assembly assembly);
+
+    void AddType(IServiceCollection services, Type type);
+
+    void AddTypes(IServiceCollection services, params Type[] types);
+}

@@ -1,73 +1,29 @@
 <Project>
 
 	<PropertyGroup>
-		<!--项目信息-->
-		<Version>1.0.0</Version>
-		<Authors>shl</Authors>
-		<Company>Huansky Co.,Ltd.</Company>
-		<Product>FantasySky</Product>
-		<Copyright>© 2023-present Huansky Co.,Ltd.</Copyright>
-
-		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-		<IncludeSymbols>true</IncludeSymbols>
-		<SymbolPackageFormat>snupkg</SymbolPackageFormat>
-		<!--<PackageReadmeFile>README.md</PackageReadmeFile>
-		<PackageIcon>logo.png</PackageIcon>-->
-		<PackageOutputPath>$(SolutionDir)\.nupkgs</PackageOutputPath>
-	</PropertyGroup>
-
-	<PropertyGroup>
+		<!--dotnet配置-->
 		<LangVersion>latest</LangVersion>
-		<Nullable>enable</Nullable>
-		<ImplicitUsings>enable</ImplicitUsings>
-
-		<AccelerateBuildsInVisualStudio>true</AccelerateBuildsInVisualStudio>
+		<TargetFrameworks>net8.0;net9.0</TargetFrameworks>
+		<NoWarn>$(NoWarn);CS1591;CS0436</NoWarn>
 	</PropertyGroup>
 
 	<PropertyGroup>
-
-		<!-- All Microsoft packages -->
-		<MicrosoftPackageVersion>8.0.0</MicrosoftPackageVersion>
-
-		<!-- All Microsoft AspNetCore packages -->
-		<MicrosoftAspNetCorePackageVersion>8.0.0</MicrosoftAspNetCorePackageVersion>
-
-		<!-- All Microsoft EntityFrameworkCore packages -->
-		<MicrosoftEntityFrameworkCorePackageVersion>8.0.0</MicrosoftEntityFrameworkCorePackageVersion>
-
-		<!-- Microsoft.NET.Test.Sdk https://www.nuget.org/packages/Microsoft.NET.Test.Sdk -->
-		<MicrosoftNETTestSdkPackageVersion>17.8.0</MicrosoftNETTestSdkPackageVersion>
-
-		<!-- NUnit https://www.nuget.org/packages/NUnit -->
-		<NUnitPackageVersion>4.0.1</NUnitPackageVersion>
-
-		<!-- NUnit3TestAdapter https://www.nuget.org/packages/NUnit3TestAdapter -->
-		<NUnit3TestAdapterPackageVersion>4.5.0</NUnit3TestAdapterPackageVersion>
-
-		<!-- NUnit.Analyzers https://www.nuget.org/packages/NUnit.Analyzers -->
-		<NUnitAnalyzersPackageVersion>3.10.0</NUnitAnalyzersPackageVersion>
-
-		<!-- NUnit.Analyzers https://www.nuget.org/packages/coverlet.collector -->
-		<coverletcollectorPackageVersion>6.0.0</coverletcollectorPackageVersion>
-
-		<IsTestProject Condition="$(MSBuildProjectFullPath.Contains('Tests')) and ($(MSBuildProjectName.EndsWith('.UnitTests')) or $(MSBuildProjectName.EndsWith('.Test.Base')))">true</IsTestProject>
+		<IsTestProject Condition="$(MSBuildProjectFullPath.Contains('Tests')) and ($(MSBuildProjectName.EndsWith('.Tests')) or $(MSBuildProjectName.EndsWith('.Test.Base')))">true</IsTestProject>
 	</PropertyGroup>
 
 	<PropertyGroup Condition="'$(IsTestProject)' == 'true'">
-		<TargetFramework>net8.0</TargetFramework>
 		<!-- 测试项目不打包 -->
-		<IsTestProject>true</IsTestProject>
 		<IsPackable>false</IsPackable>
 		<!-- 测试项目不生成文档 -->
 		<GenerateDocumentationFile>false</GenerateDocumentationFile>
 	</PropertyGroup>
 
 	<ItemGroup Condition="'$(IsTestProject)' == 'true'">
-		<PackageReference Include="Microsoft.NET.Test.Sdk" Version="$(MicrosoftNETTestSdkPackageVersion)" />
-		<PackageReference Include="NUnit" Version="$(NUnitPackageVersion)" />
-		<PackageReference Include="NUnit3TestAdapter" Version="$(NUnit3TestAdapterPackageVersion)" />
-		<PackageReference Include="NUnit.Analyzers" Version="$(NUnitAnalyzersPackageVersion)" />
-		<PackageReference Include="coverlet.collector" Version="$(coverletcollectorPackageVersion)">
+		<PackageReference Include="Microsoft.NET.Test.Sdk" />
+		<PackageReference Include="NUnit" />
+		<PackageReference Include="NUnit3TestAdapter" />
+		<PackageReference Include="NUnit.Analyzers" />
+		<PackageReference Include="coverlet.collector">
 			<PrivateAssets>all</PrivateAssets>
 			<IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
 		</PackageReference>

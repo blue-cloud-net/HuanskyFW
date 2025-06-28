@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<Import Project="..\..\..\common.props" />
+
+	<PropertyGroup>
+		<PackageId>HuanskyFW.EntityFrameworkCore</PackageId>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\..\Core\HuanskyFW.Core\HuanskyFW.Core.csproj" />
+		<ProjectReference Include="..\..\Core\HuanskyFW.Ddd.Domain\HuanskyFW.Ddd.Domain.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.EntityFrameworkCore" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Relational"  />
+	</ItemGroup>
+
+</Project>

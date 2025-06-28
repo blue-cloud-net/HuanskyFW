@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<Import Project="..\..\..\common.props" />
+
+	<PropertyGroup>
+		<PackageId>HuanskyFW.Caching.StackExchangeRedis</PackageId>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="StackExchange.Redis" />
+		<PackageReference Include="Microsoft.Extensions.Caching.StackExchangeRedis" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\HuanskyFW.Caching\HuanskyFW.Caching.csproj" />
+	</ItemGroup>
+
+</Project>

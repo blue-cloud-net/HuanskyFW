@@ -1,9 +1,0 @@
-<Project Sdk="Microsoft.NET.Sdk">
-
-	<Import Project="..\..\..\common.props" />
-
-	<PropertyGroup>
-		<PackageId>FantasySky.CustomDF.Storage.Abstractions</PackageId>
-	</PropertyGroup>
-
-</Project>

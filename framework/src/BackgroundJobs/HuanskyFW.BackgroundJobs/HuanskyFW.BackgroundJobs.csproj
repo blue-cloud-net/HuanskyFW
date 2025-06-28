@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<Import Project="..\..\..\common.props" />
+
+	<PropertyGroup>
+		<PackageId>HuanskyFW.BackgroundJobs</PackageId>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\..\DistributedLocking\HuanskyFW.DistributedLocking.Abstractions\HuanskyFW.DistributedLocking.Abstractions.csproj" />
+		<ProjectReference Include="..\HuanskyFW.BackgroundWorkers\HuanskyFW.BackgroundWorkers.csproj" />
+	</ItemGroup>
+
+</Project>

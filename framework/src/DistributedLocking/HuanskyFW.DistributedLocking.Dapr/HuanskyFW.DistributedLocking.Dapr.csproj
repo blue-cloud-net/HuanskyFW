@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<Import Project="..\..\..\common.props" />
+
+	<PropertyGroup>
+		<PackageId>HuanskyFW.DistributedLocking.Dapr</PackageId>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\..\Dapr\HuanskyFW.Dapr\HuanskyFW.Dapr.csproj" />
+		<ProjectReference Include="..\HuanskyFW.DistributedLocking\HuanskyFW.DistributedLocking.csproj" />
+	</ItemGroup>
+
+</Project>

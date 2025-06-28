@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<Import Project="..\..\..\common.props" />
+
+	<PropertyGroup>
+		<PackageId>HuanskyFW.RemoteServices</PackageId>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\..\Core\HuanskyFW.Core\HuanskyFW.Core.csproj" />
+		<ProjectReference Include="..\HuanskyFW.Http.Client\HuanskyFW.Http.Client.csproj" />
+	</ItemGroup>
+
+</Project>

@@ -1,7 +1,0 @@
-<Project Sdk="Microsoft.NET.Sdk">
-
-	<ItemGroup>
-		<ProjectReference Include="..\FantasySky.CustomDF.Storage.Abstractions\FantasySky.CustomDF.Storage.Abstractions.csproj" />
-	</ItemGroup>
-
-</Project>

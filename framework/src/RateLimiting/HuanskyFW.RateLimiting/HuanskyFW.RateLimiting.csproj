@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<Import Project="..\..\..\common.props" />
+
+	<PropertyGroup>
+		<PackageId>HuanskyFW.RateLimiting</PackageId>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="System.Threading.RateLimiting" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\..\Caching\HuanskyFW.Caching\HuanskyFW.Caching.csproj" />
+	</ItemGroup>
+
+</Project>

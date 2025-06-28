@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<Import Project="..\..\..\common.props" />
+
+	<PropertyGroup>
+		<PackageId>HuanskyFW.Ddd.Domain</PackageId>
+		<Description>Web开发框架</Description>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\HuanskyFW.Core\HuanskyFW.Core.csproj" />
+	</ItemGroup>
+
+</Project>

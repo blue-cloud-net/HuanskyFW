@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<Import Project="..\..\..\common.props" />
+
+	<PropertyGroup>
+		<PackageId>HuanskyFW.Dapr</PackageId>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Dapr.Client" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\..\Core\HuanskyFW.Core\HuanskyFW.Core.csproj" />
+	</ItemGroup>
+
+</Project>

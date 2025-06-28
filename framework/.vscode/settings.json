@@ -1,0 +1,23 @@
+{
+    "files.exclude": {
+        ".vs": true,
+        ".nupkgs": true,
+        "**/.vshistory": true,
+        "**/bin": true,
+        "**/obj": true,
+    },
+    "search.exclude": {
+        ".vs": true,
+        ".nupkgs": true,
+        "**/.vshistory": true,
+        "**/bin": true,
+        "**/obj": true,
+    },
+    "files.watcherExclude": {
+        ".vs": true,
+        ".nupkgs": true,
+        "**/.vshistory": true,
+        "**/bin": true,
+        "**/obj": true,
+    }
+}
